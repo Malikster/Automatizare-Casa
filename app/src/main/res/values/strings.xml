@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Automatizare Casa</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Automatizare Casa</string>
+    <string name="nav_header_subtitle">malik.trueheart@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="apasa">Apasa pentru a aprinde sau stinge</string>
+    <string name="about">Despre</string>
+    <string name="help">Ajutor</string>
+    <string name="action_settings">Settings</string>
+    <string name="setari">Setari</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="pornire_pompa">Pornire Pompa</string>
+    <string name="pompa_on_off">Pompa ON/OFF</string>
+    <string name="compound_button">Compound button</string>
+    <string name="relative_layout">Relative layout</string>
+    <string name="TODO">TODO</string>
+</resources>

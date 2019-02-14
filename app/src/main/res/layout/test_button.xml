@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/test_button_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/TODO"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/test_button_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/test_button_image"
+        android:layout_toEndOf="@+id/test_button_image"
+        android:layout_toRightOf="@+id/test_button_image"
+        android:text="@string/relative_layout"
+        android:textSize="15sp"
+        tools:ignore="RelativeOverlap">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/test_button_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/test_button_text2"
+        android:layout_alignStart="@+id/test_button_text2"
+        android:layout_alignLeft="@+id/test_button_text2"
+        android:text="@string/compound_button">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/test_button_image2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/TODO"
+        android:src="@drawable/iconfinder_sun" />
+
+</RelativeLayout>

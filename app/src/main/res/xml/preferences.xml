@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="myPrefs">
+    <PreferenceCategory android:title="Setari Iluminat">
+        <EditTextPreference
+            android:defaultValue="http://192.168.1.125:8080"
+            android:key="address"
+            android:summary="Please provide server address"
+            android:title="Adresa ip iluminat" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="applicationUpdates"
+            android:summary="Apasa pentru a porni sau a opri pompa."
+            android:title="Pornire/Oprire Pompa" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Setari Aplicatie">
+        <EditTextPreference
+            android:defaultValue="http://www.google.ro"
+            android:enabled="false"
+            android:key="updateaddr"
+            android:summary="Please provide server address"
+            android:title="Adresa server update" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="false"
+            android:key="applicationUpdates"
+            android:summary="This option if selected will allow the application to check for latest versions."
+            android:title="Application Updates" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Setari pentru depanare">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="toasts"
+            android:summary="This option if selected will allow the application to show toasts."
+            android:title="Afisare Toast-uri" />
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>
