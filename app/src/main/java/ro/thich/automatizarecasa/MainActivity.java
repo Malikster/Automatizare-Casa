@@ -20,6 +20,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     String urlSet;
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity
     Boolean stare7 = false;
     Boolean stare8 = false;
     Boolean stare9 = false;
+
+    int versionCode = BuildConfig.VERSION_CODE;
+    String versionName = BuildConfig.VERSION_NAME;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +76,8 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
+        MenuItem vers = navigationView.getMenu().findItem(R.id.nav_version);
+        vers.setTitle(versionName);
 
         final RelativeLayoutButton button1 = new RelativeLayoutButton(this, R.id.button1);
         button1.setText(R.id.test_button_text1, getString(R.string.apasa));

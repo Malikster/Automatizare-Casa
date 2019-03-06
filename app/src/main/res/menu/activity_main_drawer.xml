@@ -35,4 +35,14 @@
         </menu>
     </item>
 
+    <item android:title="@string/versiune">
+        <menu>
+            <item
+                android:id="@+id/nav_version"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/versiune" />
+
+        </menu>
+    </item>
+
 </menu>
